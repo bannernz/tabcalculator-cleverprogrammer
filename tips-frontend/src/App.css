@@ -1,0 +1,162 @@
+
+html,
+body {
+  background: linear-gradient(0deg, rgb(208, 208, 200) 0%, rgba(0,212,255,1) 100%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 30pt;
+  width:50%;
+}
+
+input {
+  font-size: 30pt;
+}
+
+button {
+  font-size: 30pt;
+}
+
+.app > div {
+  padding: 10px 0;
+}
+.app .field {
+  width: 100%;
+}
+.app {
+  margin: auto;
+}
+.field label::after {
+  content: ':';
+}
+
+.field label {
+  padding-right: 10px;
+  font-weight: 800;
+}
+
+.app__button {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.app__button > button {
+  background-color: #f0c14b;
+  border-radius: 5px;
+  width: 100%;
+  /* height: 30px; */
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  padding: 0 5px;
+}
+
+.app__button > button > span {
+  padding: 15px;
+  display: block;
+}
+
+.field {
+  display: flex;
+}
+
+.field input {
+  flex: 1;
+  width: 100%;
+  min-width: 1%;
+}
+
+.selector {
+  display: flex;
+  max-width: 100%;
+}
+
+.selector > input {
+  flex: 1;
+  min-width: 1%;
+  width: 100%;
+}
+
+.selector .button {
+  flex: 0.2;
+  display: none;
+  text-align: center
+}
+
+.app__button button:disabled {
+  background-color: grey;
+}
+
+.app__button > span {
+  color: white;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: red;
+  font-weight: 600;
+}
+
+/* .selector .button {
+  text-align: center
+}
+
+.selector .button {
+  text-align: center
+} */
+
+@media only screen and (max-width: 800px) {
+  .app {
+    width: 80%;
+    font-size: 30pt;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .app {
+    width: 90%;
+    font-size: 15pt;
+  }
+
+  .app input {
+    text-align: center;
+  }
+
+  .app .app__header h1 {
+    font-size: 10px;
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app__button > button {
+    background-color: #f0c14b;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+  }
+
+  .selector .button {
+    display: block;
+    width:1%;
+  }
+
+  .app__answer {
+    font-size: 25pt;
+    text-align: center
+  }
+  
+}
