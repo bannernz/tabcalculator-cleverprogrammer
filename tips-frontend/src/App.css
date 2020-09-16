@@ -79,11 +79,16 @@ button {
 .selector {
   display: flex;
   max-width: 100%;
+  width: 100%;
 }
 
 .selector > input {
   flex: 1;
   min-width: 1%;
+  width: 100%;
+}
+
+.selector .percentage {
   width: 100%;
 }
 
